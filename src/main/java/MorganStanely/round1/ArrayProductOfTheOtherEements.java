@@ -19,5 +19,17 @@ public class ArrayProductOfTheOtherEements {
             arr1[i]=prod;
         }
         System.out.println(Arrays.toString(arr1));
+
+        //optimized way
+        int prd=1;
+        int[] prdArr=new int[arr.length];
+        for(int i:arr){
+           prd*=i;
+        }
+        System.out.println(prd);
+        for(int i=0;i<n;i++){
+            prdArr[i]=prd/arr[i];
+        }
+        System.out.println(Arrays.toString(prdArr));
     }
 }
