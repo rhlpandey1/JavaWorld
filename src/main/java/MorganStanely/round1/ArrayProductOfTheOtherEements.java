@@ -21,15 +21,14 @@ public class ArrayProductOfTheOtherEements {
         System.out.println(Arrays.toString(arr1));
 
         //optimized way
-        int prd=1;
-        int[] prdArr=new int[arr.length];
+        int prd = 1;
         for(int i:arr){
            prd*=i;
         }
         System.out.println(prd);
         for(int i=0;i<n;i++){
-            prdArr[i]=prd/arr[i];
+            arr[i]=prd/arr[i];
         }
-        System.out.println(Arrays.toString(prdArr));
+        System.out.println(Arrays.toString(arr));
     }
 }
