@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class ArrayProductOfTheOtherEements {
 
     public static void main(String[] args) {
+        //brtute force technique
         int []arr={1,2,3,4};
         //arr[i] ->
         //{24,12,8,6}
