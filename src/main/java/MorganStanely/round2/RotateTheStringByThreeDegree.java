@@ -4,6 +4,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class RotateTheStringByThreeDegree {
+    //no loop approach 
+     public static  String leftRotate(String str, int d)
+    {
+        String op=str.substring(d)+str.substring(0,d);
+        return op;
+    }
+    public static String rightRotate(String str, int d){
+        String op=str.substring(str.length()-d,str.length())+str.substring(0,str.length()-d);
+        return op;
+    }
     public static void main(String[] args) {
         String str="AB";
         //ulRah
@@ -37,6 +47,8 @@ public class RotateTheStringByThreeDegree {
         }
 
         System.out.println(new String(ch));
+        System.out.println(leftRotate("GeeksforGeeks",2));
+        System.out.println(rightRotate("GeeksforGeeks",2));
 
 
     }
