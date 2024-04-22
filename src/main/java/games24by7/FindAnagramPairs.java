@@ -25,6 +25,10 @@ public class FindAnagramPairs {
             List<String> values = map.get(s);
                 System.out.print(values);
         }
+        //another way of iterating map
+       for(Map.Entry<String,List<String>> entry: map.entrySet()){
+            System.out.println(entry.getValue());
+        }
     }
     public static void main(String[] args) {
         String []arr =  { "cat", "dog", "tac", "god", "act" };
