@@ -19,5 +19,16 @@ public class ArrayProductOfTheOtherElements {
             arr1[i] = prod;
         }
         System.out.println(Arrays.toString(arr1));
+        //solution 2
+        int[] result = new int[arr.length];
+        int prod=1;
+        for(int i:arr){
+            prod=prod*i;
+        }
+        System.out.println(prod);
+        for(int i=0;i<arr.length;i++){
+            result[i]=prod/arr[i];
+        }
+        System.out.println(Arrays.toString(result));
     }
 }
