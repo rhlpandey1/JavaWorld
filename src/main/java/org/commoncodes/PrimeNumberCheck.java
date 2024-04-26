@@ -15,7 +15,10 @@ public class PrimeNumberCheck {
         return flag;
     }
     public static void main(String[] args) {
-        System.out.println(primeCheck(4));
+        int n=4;
+        System.out.println(primeCheck(n));
+        //using java 8
+         boolean isPrime= IntStream.rangeClosed(2,n/2).noneMatch(i->n%i==0);
 
     }
 }
