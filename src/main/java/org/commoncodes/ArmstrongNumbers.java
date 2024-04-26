@@ -1,3 +1,4 @@
+package org.commoncodes;
 public class ArmstrongNumbers {
     private static boolean isArmStrong(int n){
         int res=0;
